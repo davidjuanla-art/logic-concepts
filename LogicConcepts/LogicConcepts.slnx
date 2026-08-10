@@ -1,1 +1,11 @@
-<Solution />
+<Solution>
+  <Folder Name="/01/">
+    <Project Path="EvenOrOdd/EvenOrOdd.csproj" />
+  </Folder>
+  <Folder Name="/02/">
+    <Project Path="TheGreatsNumber/TheGreatsNumber.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared/Shared.csproj" />
+  </Folder>
+</Solution>
