@@ -5,5 +5,6 @@
   <Folder Name="/02/">
     <Project Path="TheGReatNumber/TheGReatNumber.csproj" Id="aee4075e-b5a6-4153-a3e8-edb6bb95f264" />
   </Folder>
+  <Folder Name="/03/" />
   <Project Path="Shared/Shared.csproj" Id="cfb9e2ac-07c2-4866-a2e3-01a95a797fdb" />
 </Solution>

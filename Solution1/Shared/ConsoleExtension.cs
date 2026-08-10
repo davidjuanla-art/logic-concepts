@@ -15,10 +15,10 @@ public static class ConsoleExtension
             }
 
 
-        public static string? GetValidOptions(string massage, List<string> options)
+        public static string? GetValidOptions(string message, List<string> options)
         {
 
-            Console.Write(massage);
+            Console.Write(message);
             var answer = Console.ReadLine();
             if (options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)))
             {
