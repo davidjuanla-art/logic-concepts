@@ -9,10 +9,10 @@ var y = ConsoleExtension.GetInt("Ingrese segundo nùmero: ");
 
 
 if (x % y == 0)
-{ 
-    Console.WriteLine($"El nùmero {y} es múltiplo de {x}");
+{
+    Console.WriteLine($"El número {x} es múltiplo de {y}");
 }
 else
 {
-    Console.WriteLine($"El nùmero {y} no es múltiplo de {x}");
+    Console.WriteLine($"El número {x} no es múltiplo de {y}");
 }
