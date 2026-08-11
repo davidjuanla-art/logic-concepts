@@ -11,6 +11,9 @@
   <Folder Name="/04/">
     <Project Path="One number is a multiple of another/One number is a multiple of another.csproj" Id="43035396-03e5-4668-9b9e-3f3da6835c6e" />
   </Folder>
+  <Folder Name="/05/">
+    <Project Path="LeapYear/LeapYear.csproj" Id="2ee4842a-a1dc-4640-a1d8-165c5b4ca317" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" />
   </Folder>

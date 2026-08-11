@@ -1,8 +1,13 @@
 ﻿
 using Shared;
 
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
 
-var x = ConsoleExtension.GetInt("Ingrese primer nùmero: ");
+do
+{
+
+    var x = ConsoleExtension.GetInt("Ingrese primer nùmero: ");
 var y = ConsoleExtension.GetInt("Ingrese segundo nùmero: ");
 
 
@@ -16,3 +21,11 @@ else
 {
     Console.WriteLine($"El número {x} no es múltiplo de {y}");
 }
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("Desea continuar? si/no: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+Console.WriteLine("game over");
