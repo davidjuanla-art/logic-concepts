@@ -8,6 +8,9 @@
   <Folder Name="/03/">
     <Project Path="SortingOfThreeNumbers/SortingOfThreeNumbers.csproj" Id="f1277a12-0176-4bb2-aea7-9587b424a0b6" />
   </Folder>
+  <Folder Name="/04/">
+    <Project Path="One number is a multiple of another/One number is a multiple of another.csproj" Id="43035396-03e5-4668-9b9e-3f3da6835c6e" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" />
   </Folder>

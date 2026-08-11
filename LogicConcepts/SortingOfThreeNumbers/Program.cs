@@ -1,53 +1,67 @@
 ﻿
 using Shared;
 
+var options = new List<string> { "s", "n" };
+string? answer;
 
-var x = ConsoleExtension.GetInt("Ingrese primer nùmero: ");
-var y = ConsoleExtension.GetInt("Ingrese segundo nùmero: ");
-var z = ConsoleExtension.GetInt("Ingrese tercer nùmero: ");
-
-int Mayor = 0;
-int Medio = 0;
-int Menor = 0;
-
-if (x >= y && x >= z)
+do
 {
-    Mayor = x;
-    if (y >= z)
+    var x = ConsoleExtension.GetInt("Ingrese primer número: ");
+    var y = ConsoleExtension.GetInt("Ingrese segundo número: ");
+    var z = ConsoleExtension.GetInt("Ingrese tercer número: ");
+
+    int Mayor = 0;
+    int Medio = 0;
+    int Menor = 0;
+
+    if (x >= y && x >= z)
     {
-        Medio = y;
-        Menor = z;
-        Console.WriteLine($"El numero mayor es: {Mayor}, el del medio es: {Medio} y el menor es: {Menor}");
+        Mayor = x;
+        if (y >= z)
+        {
+            Medio = y;
+            Menor = z;
+        }
+        else
+        {
+            Medio = z;
+            Menor = y;
+        }
     }
     else if (y >= x && y >= z)
     {
         Mayor = y;
-
-        if (z >= x) 
+        if (x >= z)
         {
-        Medio = z;
-        Menor = x;
-            Console.WriteLine($"El numero mayor es: {Mayor}, el del medio es: {Medio} y el menor es: {Menor}");
+            Medio = x;
+            Menor = z;
+        }
+        else
+        {
+            Medio = z;
+            Menor = x;
         }
     }
     else
     {
         Mayor = z;
-
-        if (y >= x)
-        {
-            Medio = y;
-            Menor = x;
-        }
-        else
+        if (x >= y)
         {
             Medio = x;
             Menor = y;
         }
-        Console.WriteLine($"El numero mayor es: {Mayor}, el del medio es: {Medio} y el menor es: {Menor}");
+        else
+        {
+            Medio = y;
+            Menor = x;
+        }
     }
+
+    Console.WriteLine($"El número mayor es: {Mayor}, el del medio es: {Medio} y el menor es: {Menor}");
+
     answer = ConsoleExtension.GetValidOptions("¿Desea repetir? (s/n): ", options);
 
-} while (answer != null && answer.Equals("s", StringComparison.CurrentCultureIgnoreCase)) ;
-}
-   
+} while (answer != null && answer.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+Console.WriteLine("Game over");
+
