@@ -26,6 +26,14 @@
   <Folder Name="/09/">
     <Project Path="MerchandiseShipment/MerchandiseShipment.csproj" Id="197001e4-3a80-4aaa-a116-4a4f6c8cf6fa" />
   </Folder>
+  <Folder Name="/10/">
+    <Project Path="WareHouse S.A/WareHouse S.A.csproj" Id="79a5b4ba-ddbc-4bfc-b7b4-de19e4cfbb0b" />
+  </Folder>
+  <Folder Name="/11/">
+    <Project Path="Encomiendas/Encomiendas.csproj" Id="1bf8a5a4-d1f2-4cec-8fa3-3148808e8939" />
+    <Project Path="frente/frente.csproj" Id="e3c7d19c-4d60-41a6-8840-3fc1d2689781" />
+    <Project Path="Myproject/Myproject..csproj" Id="a82de039-2319-495a-b45e-7dfe942d6fc6" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" />
   </Folder>
