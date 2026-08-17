@@ -34,6 +34,9 @@
     <Project Path="frente/frente.csproj" Id="e3c7d19c-4d60-41a6-8840-3fc1d2689781" />
     <Project Path="Myproject/Myproject..csproj" Id="a82de039-2319-495a-b45e-7dfe942d6fc6" />
   </Folder>
+  <Folder Name="/12/">
+    <Project Path="PrimeNumbers/PrimeNumbers.csproj" Id="56c90e54-e68d-42b7-a88a-09c50d1a73f5" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" />
   </Folder>
