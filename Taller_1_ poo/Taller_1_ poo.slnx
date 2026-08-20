@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Folder Name="/Taller/">
+    <Project Path="Backend/Backend.csproj" />
+  </Folder>
+  <Project Path="Frontend/Frontend.csproj" />
+</Solution>
