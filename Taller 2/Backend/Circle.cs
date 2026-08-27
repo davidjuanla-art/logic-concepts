@@ -17,9 +17,11 @@ public class Circle : GeometricFigure
     //properties
 
     public double R
-    { get => _r; 
-        set => _r = ValidateR(value); 
+    {
+        get => _r;
+        set => _r = ValidateR(value);
     }
+
 
     // public methods 
 
@@ -38,12 +40,13 @@ public class Circle : GeometricFigure
 
     private double ValidateR(double value)
     {
-       if (R  <= 0)
+        if (value <= 0)
         {
-            throw new Exception($"El radio {R} debe ser mayor a cero");
+            throw new Exception($"El radio {value} debe ser mayor a cero");
         }
-        return R;
+        return value;
     }
+
 }
 
 
