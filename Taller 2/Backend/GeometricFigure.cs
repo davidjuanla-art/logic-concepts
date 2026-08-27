@@ -24,7 +24,8 @@ public abstract class GeometricFigure
 
     public override string ToString()
     {
-        return $"{name}/t => Area. . . . . :/t{GetArea}/t perimeter:/t {GetPerimeter}";
+        return $"{name}\t => Area: {GetArea()}\t Perimeter: {GetPerimeter()}";
+
 
 
 

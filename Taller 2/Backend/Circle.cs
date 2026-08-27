@@ -1,6 +1,6 @@
 ﻿namespace Backend_;
 
-    public class Circle 
+public class Circle : GeometricFigure
 
     {
         // fields
@@ -8,21 +8,43 @@
         private double _r;
 
     //constructor
-   
-    public Circle(double r)
+
+    public Circle(string name, double r) : base(name)
     {
-        this._r = r;
+        R = r;
     }
 
     //properties
 
-    public double R { get; set; } 
+    public double R
+    { get => _r; 
+        set => _r = ValidateR(value); 
+    }
 
-    //methods 
+    // public methods 
 
 
+    public override double GetArea()
+    {
+        return Math.PI * _r * _r;
+    }
 
+    public override double GetPerimeter()
+    {
+        return 2 * Math.PI * _r;
+    }
 
+    //private methods
+
+    private double ValidateR(double value)
+    {
+       if (R  <= 0)
+        {
+            throw new Exception($"El radio {R} debe ser mayor a cero");
+        }
+        return R;
+    }
 }
+
 
 
