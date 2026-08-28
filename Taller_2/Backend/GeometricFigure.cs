@@ -1,6 +1,6 @@
-﻿
+﻿namespace GeometricFigures.Backend;
 
-namespace Backend_;
+
 
 public abstract class GeometricFigure
 {
@@ -24,11 +24,12 @@ public abstract class GeometricFigure
 
     public override string ToString()
     {
-        return $"{name}\t => Area: {GetArea()}\t Perimeter: {GetPerimeter()}";
+        return $"{name}\t        => Area.....: {GetArea():f5}\t Perimeter:    {GetPerimeter():f5}";
 
 
 
 
     }
 }
+
 
