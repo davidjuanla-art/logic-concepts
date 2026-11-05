@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DoublyLinkedList.Backend/DoublyLinkedList.Backend.csproj" />
+  <Project Path="DoublyLinkedList.Fonted/DoublyLinkedList.Fonted.csproj" />
+</Solution>
